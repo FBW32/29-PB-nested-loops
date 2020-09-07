@@ -94,15 +94,6 @@ for (let i in arr2)
 }
 
 
-for (let i = 0; i < 3; i++) {
-    x = i -i;
-    console.log(x);
-    for (let j = 1; j < 3; j++) {
-        x = j;
-        console.log(j);
-    }
-}
-
 //OR
 
 let array3 = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]; 
