@@ -105,8 +105,8 @@ for (let i = 0; i < array3.length; i++) {
         }
 }
 console.log(result);
-// Write a program that will output the following using loops:
 
+// Write a program that will output the following using loops:
 // 1 1 1 2 2 2 3 3 3 4 4 4
 
 let num1 = '';
@@ -117,12 +117,38 @@ for (let i = 1; i <= 4; i++) {
   }
 console.log(num1);
 
+//OR
+
+function sequence(number) {
+    const boxArr = [];
+    for(let i = 1; i <= 4; i++) {
+        for (let j = 0; j < 3; j++) 
+        boxArr.push(i)  
+    }
+    return boxArr.join(" ")
+}
+
+console.log(sequence()); 
+
 // Write a program that will output the following using loops:
 // 0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
 let num2 = '';
-for (let j = 0; j < 3; j++) {
-    for (let i = 0; i <= 4; i++) {
-        num2 += i + ' ';
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j <= 4; j++) {
+        num2 +=  j + ' ';
     }
   }
 console.log(num2); 
+
+//OR
+function sequence2(number) {
+    const boxArr = [];
+    for(let i = 1; i <= 3; i++) {
+        for (let j = 0; j < 5; j++) 
+        boxArr.push(j)  
+    }
+    return boxArr.join(" ")
+}
+
+console.log(sequence2());
+
