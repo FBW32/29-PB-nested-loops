@@ -19,8 +19,16 @@ sumAndProduct([1, 2, 3, 4, 5, 6]); // Sum of the array: 21
     * * * *  
     * * * * *  
 */
+for (let i = 0; i < 4; i++) {           // for rows
+    let asterikStr = '';
+    for (let y = 0; y <= i; y++) {      // for columns
+        asterikStr += '*';
+    }
+    console.log(asterikStr);
+}
+// OR
 let design = "";
-for ( let i = 1; i <= 6; i++) {
+for ( let i = 1; i <= 5; i++) {
    
     for (let j = 1; j < i; j++) {
          design = design + " " + ("*");
@@ -38,14 +46,12 @@ for ( let i = 1; i <= 6; i++) {
 
 /* 3. Write a program which prints the elements of the following array: let arr = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]; Sample Output: "row 0" " 1" " 2" " 1" " 24" "row 1" */
 let array = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]; 
-let result = "";
 for (let i = 0; i < array.length; i++) {
     console.log(`"row ${i}"`);
      for(var j = 0; j < array[i].length; j++){
             console.log(`${array[i][j]}"`);
         }
 }
-console.log(result);
 /*
     "row 0"
     1"
@@ -77,6 +83,15 @@ console.log(result);
 /* 4. Write a program that will output the following using loops:
 1 1 1 2 2 2 3 3 3 4 4 4
 */
+arr = [];
+for (let i = 1; i <= 4; i++) {
+    for (let y = 1; y <= 3; y++) {
+        let strNums = i.toString();
+        arr.push(strNums)
+    }
+}
+console.log(arr.join(''));
+// OR
 let num = "";
 for (let i = 1; i <= 4; i++) {
     for (let g = 0; g < 3; g++) {
